@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Prático - HTML Básico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        nav {
+            background-color: #555;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #333;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        td {
+            padding: 10px;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .destaque {
+            background-color: #fffacd;
+            padding: 15px;
+            border-left: 4px solid #ffa500;
+            margin: 15px 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>Meu primeiro site</h1>
+        <p>Exercício prático - Tags semânticas e Tabelas</p>
+    </header>
+
+    <!-- NAVEGAÇÃO -->
+    <nav> 
+        <!-- utilizar links com âncora-->
+        <a href="#sobre">Sobre</a>
+        <a href="#serviços">Serviços</a>
+        <a href="#horarios">Horários</a>
+    </nav>
+
+    <!-- SEÇÃO PRINCIPAL -->
+    <main>
+        <section id="sobre">
+            <h3><strong>Sobre mim</strong></h3>
+            <h4>Quem sou eu?</h4>
+            <p>Lorem ipsum
+            <strong> texto importante</strong> <em>texto importante tmb</em></p>
+
+            <ul>
+                <li> item 1</li>
+                <li> item 2</li>
+            </ul>
+            
+        <!-- Seção Sobre -->
+        <div id="sobre">
+            <div class="destaque">
+            <p><strong>Objetivo do Exercício</strong></p>
+            <p>textotextotexto</p>
+            </div>
+        </div>
+        </section>
+        <!-- Seção Serviços -->
+         <section>
+            <div id="servicos">
+                <h3>Meus serviços</h3>
+                <h4>O que eu ofereço</h4>
+                <ol>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+            </ol>
+            </div>
+         </section>
+        <!-- Seção Horários - TABELA -->
+        <section id="horarios">
+            <div >
+                <h3>Tabela de Horários</h3>
+                <p>2o período - Ciência da Computação</p>
+                <!-- Tabela de horários aqui -->
+                 <table>
+                    <tr>
+                        <tr>
+                        <th>Cabeçalho da Coluna 1</th>
+                        <th>Cabeçalho da Coluna 2</th>
+                        <th>Cabeçalho da Coluna 3</th>
+                        <th>Cabeçalho da Coluna 4</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                            <td rowspan="3">segunda-feira</td>
+                            <td>hora</td>
+                            <td>Linha 2, Coluna 1</td>
+                            <td>Linha 2, Coluna 2</td>
+                            </tr>
+
+                            <tr>
+                            <td> linha </td>
+                            <td>linha</td>
+                            <td>Linha 2, Coluna 1</td>
+                            </tr>
+
+                            <tr>
+                            <td> linha </td>
+                            <td>linha</td>
+                            <td>Linha 2, Coluna 1</td>
+                            </tr>
+
+                            <tr>
+                            <td rowspan="3">segunda-feira</td>
+                            <td>hora</td>
+                            <td>Linha 2, Coluna 1</td>
+                            <td>Linha 2, Coluna 2</td>
+                            </tr>
+
+                            <tr>
+                            <td> linha </td>
+                            <td>linha</td>
+                            <td>Linha 2, Coluna 1</td>
+                            </tr>
+
+                            <tr>
+                            <td> linha </td>
+                            <td>linha</td>
+                            <td>Linha 2, Coluna 1</td>
+                            </tr>
+
+                            <tr>
+                            <td colspan="4"><strong>Finalizar o horário...</strong></td>
+                            </tr>
+                        </tbody>
+                    </tr>
+        </table>
+        </div>
+        </div>
+        </section>
+    <!-- RODAPÉ -->
+     <footer>
+        <p>© 2026 Madu Torres - Todos os deireitos reservados</p>
+        <p>Lorem ipsum dolor sit amet</p>
+     </footer>
+</body>
+</html>
