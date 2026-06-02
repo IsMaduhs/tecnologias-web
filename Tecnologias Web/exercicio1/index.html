@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Prático - HTML Básico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        nav {
+            background-color: #555;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #333;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        td {
+            padding: 10px;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .destaque {
+            background-color: #fffacd;
+            padding: 15px;
+            border-left: 4px solid #ffa500;
+            margin: 15px 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>Meu primeiro site</h1>
+        <p>Exercício prático - Tags semânticas e Tabelas</p>
+    </header>
+
+    <!-- NAVEGAÇÃO -->
+    <nav> 
+        <!-- utilizar links com âncora-->
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#horarios">Horários</a>
+    </nav>
+
+    <!-- SEÇÃO PRINCIPAL -->
+    <main>
+        <!-- Seção Sobre -->
+        <section id="sobre">
+            <h3><strong>Sobre mim</strong></h3>
+            <h4>Quem sou eu?</h4>
+            <p>
+                Olá! Meu nome é <b>Madu Torres</b>, sou aluna do curso de Ciência da Computação. 
+                Este é meu primeiro exercício com <i>HTML semântico.</i>
+            </p>
+            <p>Estou aprendendo sobre:</p>
+            <ul>
+                <li>Tags semânticas (header, nav, main, section, article, aside, footer)</li>
+                <li>Listas ordenadas e não ordenadas </li>
+                <li>Tabelas estruturadas</li>
+                <li>Links e imagens</li>
+            </ul>
+
+            <div class="destaque">
+            <p>
+            <b>Objetivo do Exercício</b>
+            </p>
+            <p> 
+                Praticar a criação de uma página HTML completa utilizando as principais 
+                tags e mantendo a semântica correta do documento.
+            </p>
+            </div>
+        </section>
+
+        <!-- Seção Serviços -->
+        <section id="servicos">
+            <h3>Meus serviços:</h3>
+            <h4>O que eu ofereço</h4>
+            <ol>
+                <li>Desenvolvimento Web - Criação de sites responsivos</li>
+                <li>Manutenção - Atualização e correção de sites existentes</li>
+                <li>Consultoria - Orientação sobre melhores práticas</li>
+            </ol>
+        </section>
+
+        <!-- Seção Horários - TABELA -->
+        <section id="horarios">
+            <h3>Tabela de Horários</h3>
+            <p>2º período - Ciência da Computação</p>
+            
+        <!-- Tabela de horários aqui -->
+        <table>
+                <thead> <tr>
+                        <th>Dia da Semana</th>
+                        <th>Horário</th>
+                        <th>Disciplina</th>
+                        <th>Professor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">Segunda-feira</td>
+                        <td>16:50 - 18:30</td>
+                        <td>ACEx I</td>
+                        <td>Eliomar</td>
+                    </tr>
+
+                    <tr>
+                        <td>18:30 - 20:10</td>
+                        <td>Banco de Dados I</td>
+                        <td>Tiago</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>20:20 - 22:00</td>
+                        <td>Tecnologias Web</td>
+                        <td>Fabiano</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2">Terça-Feira</td>
+                        <td>18:30 - 20:10</td>
+                        <td>Cálculo  I</td>
+                        <td>Esdriane</td>
+                    </tr>
+
+                    <tr>
+                        <td>20:20 - 22:00</td>
+                        <td>Banco de Dados</td>
+                        <td>Tiago</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="4"><strong>Finalizar o horário...</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>&COPY; 2026 Madu Torres - Todos os deireitos reservados</p>
+        <p>Criado como exercício prático de HTML</p>
+    </footer>
+    </body>
+    </html>
