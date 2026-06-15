@@ -1,0 +1,129 @@
+header {
+  background-color: #5e2a7e;
+  padding: 25px;
+  text-align: center;
+  color: #ffff;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+header span {
+  font-size: 14px;
+  color: #e0d0eb;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+#btn-add {
+  background-color: #5e2a7e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 35px 50px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  /*sem o justify e o align o botao fica do tamanho do card*/
+  justify-self: center; 
+  align-self: center;
+  opacity: 0;
+  transition: transform 0.2s, background-color 0.2s;
+  transform: translateY(40px);
+  animation: surgimento 0.8s ease forwards;
+  transition:
+  transform 0.3s ease,
+  box-shadow 0.3s ease;
+}
+
+#btn-add:hover {
+  background-color: #451e5e;
+  transform: scale(1.1);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  max-width: 1200px;
+  gap: 30px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background-color: #ffff;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  border: 1px solid #dddddd;
+  box-shadow: 1px 4px 6px #0404040b;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: surgimento 0.8s ease forwards;
+  transition:
+  transform 0.3s ease,
+  box-shadow 0.3s ease;
+}
+
+@keyframes surgimento {
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Retorna para a posição original */
+  }
+}
+
+.card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+.card img {
+  object-fit: contain;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  padding: 10px;
+  max-width: 100%;
+  height: 220px;
+  background-color: #ffffff;
+}
+
+.card button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.card p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+footer {
+  text-align: center;
+  height: 15%;
+  background-color: #eaeaea;
+  padding: 10px;
+}
