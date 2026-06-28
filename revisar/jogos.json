@@ -1,0 +1,44 @@
+[
+  {
+    "titulo": "Metal Gear Solid",
+    "ano": 1998,
+    "protagonista": "Solid Snake",
+    "imagem": "imagens/mgs.png",
+    "descricao": "BROTHEEEEER AND JEANS"
+  },
+  {
+    "titulo": "Metal Gear Solid 2: Sons of Liberty",
+    "ano": 2001,
+    "protagonista": "Raiden",
+    "imagem": "imagens/mgs2.png",
+    "descricao": "touch grass."
+  },
+  {
+    "titulo": "Metal Gear Solid 3: Snake Eater",
+    "ano": 2004,
+    "protagonista": "Naked Snake",
+    "imagem": "imagens/mgs3.png",
+    "descricao": "Guerra-fria + gênesis + homosexualismo"
+  },
+  {
+    "titulo": "Metal Gear Solid: Peace Walker",
+    "ano": 2004,
+    "protagonista": "Big Boss",
+    "imagem": "imagens/pw.png",
+    "descricao": "Militaires Sans Frontières. Quem diria que ia dar merda"
+  },
+  {
+    "titulo": "Metal Gear Solid V: The Phantom Pain",
+    "ano": 2015,
+    "protagonista": "Venom Snake",
+    "imagem": "imagens/mgsV.png",
+    "descricao": "Eu sou você e você sou eu"
+  },
+  {
+    "titulo": "Metal Gear Rising: Revengeance",
+    "ano": 2013,
+    "protagonista": "Raiden",
+    "imagem": "imagens/rising.png",
+    "descricao": "STANDING HERE I REALISE"
+  }
+]

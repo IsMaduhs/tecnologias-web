@@ -1,0 +1,50 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Ammo";
+  src: url(fonts/MGS1-Ammo.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Codec";
+  src: url(fonts/MGS1-Codec.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hud";
+  src: url(fonts/MGS1-HUD.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metal Gear";
+  src: url(fonts/MGS1.TTF) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tatical";
+  src: url(fonts/Tactical-espionage-action.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --bg-principal: #111411;       
+  --bg-card: #181d18;            
+  --texto-claro: #e2e8f0;        
+  --verde-codec: #4ade80;        
+  --verde-hover: #22c55e;        
+  --borda-tatic: #2f3e2f;
+  --cor-titulo:#ee1b24;
+}
